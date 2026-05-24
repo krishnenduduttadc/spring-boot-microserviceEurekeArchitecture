@@ -7,16 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @Value("${server.port}")
-    private String p;
-
-//    @GetMapping("/users")
-//    public String users() {
-//        return "User Service from " + p;
-//    }
+    @Value("${message}")
+    private String msg;
 
     @GetMapping("/users")
-    public User users() {
-        return new User(1, "Krish");
+    public String users() {
+
+        return msg;
     }
 }
