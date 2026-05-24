@@ -1,0 +1,11 @@
+                 Config Server
+                       |
+                 Spring Cloud Bus
+                       |
+                   Redpanda
+                       |
+        --------------------------------
+        |              |               |
+    Gateway      Order Service    User Service
+                       |
+                    Eureka
